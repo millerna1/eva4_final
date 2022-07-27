@@ -3,16 +3,14 @@ import { v4 as uuid } from "uuid";
 /* Importar todoitem */
 import { evafinal } from "./evafinal";
 
-export function eva4() {
+export function Eva4() {
   /* Definir una lista con tareas */
-  const [todos, setTodos] = useState([
-    { id: 1, task: "Tarea 1" },
+  const [todos, setTodos] = useState([{ id: 1, task: "Tarea 1" },
     { id: 2, task: "Tarea 2" },
     { id: 3, task: "Tarea 3" },
     { id: 4, task: "Tarea 4" },
     { id: 5, task: "Tarea 5" },
-    { id: 6, task: "Tarea 6" },
-  ]);
+    { id: 6, task: "Tarea 6" }]);
 
   const taskRef = useRef();
 
@@ -138,3 +136,4 @@ export function eva4() {
     </Fragment>
   );
 }
+
