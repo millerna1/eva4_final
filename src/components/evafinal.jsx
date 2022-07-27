@@ -1,35 +1,34 @@
 import React from "react";
 
 /* debo recibir los props */
-export function evafinal({ todo, cambiarEstado }) {
+export function Evafinal (todo)  {
   const { id, task, completed } = todo;
   const fnCambiarEstado = () => {
-    cambiarEstado(id)
+    
   }
+  
   return (
-    <li className="list-group-item">
-      <input type="checkbox" 
-      onChange={fnCambiarEstado}
-      className="form-check-input me-2" checked={completed}/>
-      {task}
-    </li>
+        <div>
+             <li className="note">
+              <input
+                className="note__title"
+                type="text"
+                placeholder="Title"
+                value={todo.task}
+               
+              />
+              <textarea
+                className="note__description"
+                placeholder="Description..."
+                value={todo.task}
+               
+              />
+              <span className="note__delete" >
+                X
+              </span>
+            </li>
+        </div>
 
   );
-  return (
-  <ul>
-  <li>
-    <a href="#">
-      <h2>Title #1</h2>
-      <p>Text Content #1</p>
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      <h2>Title #2</h2>
-      <p>Text Content #2</p>
-    </a>
-  </li>
-  […]
-</ul>)
 }
 
