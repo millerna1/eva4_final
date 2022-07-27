@@ -7,6 +7,8 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(255, 0, 136);
+    text-align: center;
   }
   
   input,
@@ -25,7 +27,7 @@
   .app-header__title {
     margin: 10px 20px 0px;
     font-family: "Permanent Marker";
-    color: blue;
+    color: rgb(0, 255, 200);
   }
   
   .app-header__controls {
@@ -51,7 +53,7 @@
     cursor: pointer;
     padding: 8px;
     font-weight: bolder;
-    background-color: #eee;
+    background-color: rgb(155, 22, 22);
     outline: none;
   }
   
@@ -60,8 +62,8 @@
     width: 200px;
     height: 200px;
     margin: 10px;
-    background-color: lightyellow;
-    border: 1px solid grey;
+    background-color: rgb(225, 224, 255);
+    border: 1px solid rgb(128, 128, 128);
     box-shadow: 2px 2px 3px lightgrey;
     border-radius: 5px;
     display: flex;
@@ -74,7 +76,7 @@
     font-family: "Permanent Marker", cursive;
     width: 100%;
     padding: 8px 14px;
-    background: transparent;
+    background: rgb(246, 255, 0);
   }
   
   .note__title {
@@ -99,5 +101,11 @@
   .note__delete:hover {
     color: black;
     cursor: pointer;
+  }
+
+  .footer {
+    background-color: blueviolet;
+   margin-top: auto;
+
   }
   

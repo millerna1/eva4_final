@@ -5,12 +5,7 @@ import { evafinal } from "./evafinal";
 
 export function Eva4() {
   /* Definir una lista con tareas */
-  const [todos, setTodos] = useState([{ id: 1, task: "Tarea 1" },
-    { id: 2, task: "Tarea 2" },
-    { id: 3, task: "Tarea 3" },
-    { id: 4, task: "Tarea 4" },
-    { id: 5, task: "Tarea 5" },
-    { id: 6, task: "Tarea 6" }]);
+  const [todos, setTodos] = useState([]);
 
   const taskRef = useRef();
 
@@ -83,7 +78,7 @@ export function Eva4() {
 
   return (
     <Fragment>
-      <h1>Listado de Tareas</h1>
+      <h1>post it simulator!</h1>
 
       <div className="input-group">
         <input
