@@ -5,7 +5,14 @@ import { evafinal } from "./evafinal";
 
 export function eva4() {
   /* Definir una lista con tareas */
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([
+    { id: 1, task: "Tarea 1" },
+    { id: 2, task: "Tarea 2" },
+    { id: 3, task: "Tarea 3" },
+    { id: 4, task: "Tarea 4" },
+    { id: 5, task: "Tarea 5" },
+    { id: 6, task: "Tarea 6" },
+  ]);
 
   const taskRef = useRef();
 
@@ -103,11 +110,26 @@ export function eva4() {
           {/* Método avanzado de js */}
           {/* map es como un foreach */}
           {todos.map((todo) => (
-            <TodoItem
-              todo={todo}
-              key={todo.id}
-              cambiarEstado={cambiarEstadoTarea}
-            ></TodoItem>
+            <div>
+             <li className="note">
+              <input
+                className="note__title"
+                type="text"
+                placeholder="Title"
+                value={todo.task}
+               
+              />
+              <textarea
+                className="note__description"
+                placeholder="Description..."
+                value={todo.task}
+               
+              />
+              <span className="note__delete" >
+                X
+              </span>
+            </li>
+        </div>
           ))}
         </ul>
       </div>
